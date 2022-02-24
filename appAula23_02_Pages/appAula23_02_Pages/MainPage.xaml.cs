@@ -10,24 +10,29 @@ namespace appAula23_02_Pages
 {
     public partial class MainPage : ContentPage
     {
+        public static String nome, curso;
+
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void btnCadastrar_Clicked(object sender, EventArgs e)
+        async void btnCadastrar_Clicked(object sender, EventArgs e)
         {
-
+            nome = edtNome.Text;
+            curso = edtCurso.Text;
+            await Navigation.PushAsync(new Page2());
         }
 
         private void btnLimpar_Clicked(object sender, EventArgs e)
         {
-
+            edtNome.Text = "";
+            edtCurso.Text = "";
         }
 
         private void btnFinalizar_Clicked(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

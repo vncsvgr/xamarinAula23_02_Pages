@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appAula23_02_Pages.Page2">
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <Frame BackgroundColor="#2196F3" Padding="24">
+                <Label Text="Dados" HorizontalTextAlignment="Center" FontSize="36" TextColor="White" />
+            </Frame>
+
+            <Label Text="Nome do aluno" />
+            <Label x:Name="lblNome" Text="24" />
+            <Label Text="Curso do aluno" />
+            <Label x:Name="lblCurso" />
+
+            <Button x:Name="btnVoltar" Text="Voltar ao Menu" Clicked="btnVoltar_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

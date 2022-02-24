@@ -4,7 +4,7 @@
              x:Class="appAula23_02_Pages.MainPage">
 
     <StackLayout>
-        
+
         <Frame BackgroundColor="#2196F3" Padding="24">
             <Label Text="Cadastro" HorizontalTextAlignment="Center" FontSize="36" TextColor="White" />
         </Frame>
