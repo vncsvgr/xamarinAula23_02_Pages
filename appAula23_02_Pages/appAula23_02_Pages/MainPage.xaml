@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appAula23_02_Pages.MainPage">
+
+    <StackLayout>
+        
+        <Frame BackgroundColor="#2196F3" Padding="24">
+            <Label Text="Cadastro" HorizontalTextAlignment="Center" FontSize="36" TextColor="White" />
+        </Frame>
+
+        <Entry x:Name="edtNome" Placeholder="Digite o seu nome" />
+        <Entry x:Name="edtCurso" Placeholder="Digite o seu curso" />
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnCadastrar" Text="Cadastrar" HorizontalOptions="FillAndExpand" Clicked="btnCadastrar_Clicked" />
+            <Button x:Name="btnLimpar" Text="Limpar" HorizontalOptions="FillAndExpand" Clicked="btnLimpar_Clicked" />
+        </StackLayout>
+
+        <Button x:Name="btnFinalizar" Text="Finalizar" Clicked="btnFinalizar_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
